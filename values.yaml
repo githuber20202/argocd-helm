@@ -6,11 +6,14 @@ image:
   pullPolicy: IfNotPresent
 
 service:
-  type: LoadBalancer   # נדרש לפי המשימה
+  type: LoadBalancer
   port: 80
   targetPort: 80
 
+containerPort: 80
+
 podAnnotations: {}
+podLabels: {}
 
 resources: {}
 nodeSelector: {}
